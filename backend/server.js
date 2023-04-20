@@ -3,8 +3,6 @@ const cors = require('cors');
 const parser = require("body-parser")
 const mongoose = require('mongoose');
 
-// require('dotenv').config();
-
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -15,7 +13,7 @@ app.use(parser.urlencoded({
 app.use(cors());
 app.use(express.json());
 
-// const uri = process.env.ATLAS_URI;
+// you can replace your own mongoDB url
 const uri = "mongodb+srv://newuser:1234@cluster0.uxnqp8k.mongodb.net/BookList";
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true,  useUnifiedTopology: true   }
 );

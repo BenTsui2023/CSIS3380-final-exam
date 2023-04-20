@@ -19,7 +19,6 @@ router.route('/').post(async (req, res) => {
   const author = req.body.author;
   const description = req.body.description;
 
-  // create a new Activity object
   const newBook = await new Bookmodel({
     title,
     author,
