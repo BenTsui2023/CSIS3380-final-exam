@@ -12,7 +12,7 @@ export default function CreateBook() {
         //const activityvar = { activity: activity };
     
         axios
-          .post('https://csis3380-exam-server.onrender.com/book', {
+          .post('https://csis3380-exam-server.onrender.com/book/', {
             title,
             author,
             description

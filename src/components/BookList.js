@@ -19,7 +19,7 @@ export default function BookList() {
 
     const deleteBook = (id) => {
       axios
-        .delete('https://csis3380-exam-server.onrender.com/book' + id)
+        .delete('https://csis3380-exam-server.onrender.com/book/' + id)
         .then((response) => {
           console.log(response.data);
         });
