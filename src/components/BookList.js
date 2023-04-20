@@ -8,7 +8,7 @@ export default function BookList() {
   
     useEffect(() => {
       axios
-        .get('https://csis3380-exam-server.onrender.com/')
+        .get('https://csis3380-exam-server.onrender.com/book')
         .then((res) => {
           setBooks(res.data);
         })
@@ -19,7 +19,7 @@ export default function BookList() {
 
     const deleteBook = (id) => {
       axios
-        .delete('https://csis3380-exam-server.onrender.com/' + id)
+        .delete('https://csis3380-exam-server.onrender.com/book' + id)
         .then((response) => {
           console.log(response.data);
         });
